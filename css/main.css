@@ -1,9 +1,70 @@
+/* Colors:
+	Pink: #FF4E50
+	Green: #18D4CA
+	Orange: #FFA710
+	Purple: #667DF3
+	Dark Grey (Headings): #444444
+	Grey: #666666 
+*/
+
+:root {
+	--pink: #ff4e50;
+	--green: ;
+	--orange: ;
+	--purple: ;
+	--dark-grey: ;
+	--grey: ;
+}
+
+/* Typography */
+body,
+h4,
+h5,
+h6 {
+	font-family: "Roboto", sans-serif;
+}
+
+h1,
+h2,
+h3 {
+	font-family: "Montserrat", sans-serif;
+}
+
+h1 {
+	font-size: 3rem;
+	font-weight: 600;
+}
+h4 {
+	font-weight: 300;
+}
+h2 {
+	font-weight: 600;
+	font-size: 1.5rem;
+}
+
 .head-container {
-	background-color: green;
+	background: url("../assets/headerBackground.jpg");
+	background-size: cover;
+	color: white;
 	height: 75vh;
 }
+
+#navbarSupportedContent {
+	width: 100%;
+}
+
+.navbar-nav {
+	width: 55%;
+	justify-content: space-between;
+}
+
+#navbarSupportedContent > ul > li > a {
+	color: white !important;
+}
+
 .navbar {
 	padding: 2rem 10rem;
+	color: white;
 }
 
 .heading {
@@ -11,7 +72,6 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	background-color: green;
 }
 
 .justify-flex-end {
@@ -21,6 +81,14 @@
 .btn {
 	border-radius: 50px !important;
 	padding: 0.3rem 1.5rem;
+	background-color: var(--pink);
+	color: white !important;
+}
+
+.btn:hover {
+	cursor: pointer;
+	background-color: white;
+	color: var(--pink) !important;
 }
 
 .sub-image {
