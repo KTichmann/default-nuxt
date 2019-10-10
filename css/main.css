@@ -9,19 +9,24 @@
 
 :root {
 	--pink: #ff4e50;
-	--green: ;
-	--orange: ;
-	--purple: ;
-	--dark-grey: ;
-	--grey: ;
+	--green: #18d4ca;
+	--orange: #ffa710;
+	--purple: #667df3;
+	--dark-grey: #444444;
+	--grey: #666666;
 }
 
 /* Typography */
+body {
+	color: var(--grey) !important;
+}
+
 body,
 h4,
 h5,
 h6 {
 	font-family: "Roboto", sans-serif;
+	color: var(--dark-grey);
 }
 
 h1,
@@ -42,12 +47,68 @@ h2 {
 	font-size: 1.5rem;
 }
 
-.head-container {
-	background: url("../assets/headerBackground.jpg");
-	background-size: cover;
-	color: white;
-	height: 75vh;
+/* Misc Styles */
+
+.bg-pink {
+	background-color: var(--pink) !important;
 }
+
+.bg-green {
+	background-color: var(--green) !important;
+}
+
+.bg-orange {
+	background-color: var(--orange) !important;
+}
+
+.bg-purple {
+	background-color: var(--purple) !important;
+}
+
+.justify-flex-end {
+	justify-content: flex-end;
+}
+
+.btn {
+	transition: 0.5s all;
+	border-radius: 50px !important;
+	padding: 0.3rem 1.5rem;
+	background-color: var(--pink);
+	color: white !important;
+}
+
+.btn:hover {
+	transition: 0.5s all;
+	cursor: pointer;
+	background-color: white;
+	color: var(--pink) !important;
+}
+
+.btn-outlined,
+.nav-scrolled .btn {
+	transition: 0.5s all;
+	background-color: white;
+	color: var(--pink) !important;
+	border: 2px solid var(--pink);
+}
+
+.nav-link{
+	transition: .2s all;
+}
+
+.nav-link:hover{
+	transform: scale(1.1);
+	transition: .2s all;
+}
+
+.btn-outlined:hover {
+	transition: 0.5s all;
+	background-color: var(--pink);
+	color: white !important;
+	border: 2px solid var(--pink);
+}
+
+/* Navbar */
 
 #navbarSupportedContent {
 	width: 100%;
@@ -67,6 +128,47 @@ h2 {
 	color: white;
 }
 
+.nav-scrolled {
+	background-color: var(--pink);
+	height: 40px;
+	transition: 0.5s all;
+}
+
+.nav-scrolled .navbar-toggler {
+	margin-top: -20px;
+}
+
+.navbar-toggler{
+	border: none !important;
+}
+
+@media only screen and (max-width: 992px) {
+	.navbar-nav {
+		width: 100%;
+		background-color: var(--pink);
+		text-align: center;
+	} 
+	.navbar-nav li{
+		margin-top: .5rem;
+	}
+	.nav-scrolled .navbar-brand {
+		margin-top: -15px;
+	}
+	.navbar{
+		padding: 2rem 2rem; 
+	}
+}
+
+
+/* Header */
+
+.head-container {
+	background: url("../assets/headerBackground.jpg");
+	background-size: cover;
+	color: white;
+	height: 75vh;
+}
+
 .heading {
 	height: 70vh;
 	display: flex;
@@ -74,38 +176,21 @@ h2 {
 	justify-content: center;
 }
 
-.justify-flex-end {
-	justify-content: flex-end;
-}
-
-.btn {
-	border-radius: 50px !important;
-	padding: 0.3rem 1.5rem;
-	background-color: var(--pink);
-	color: white !important;
-}
-
-.btn:hover {
-	cursor: pointer;
-	background-color: white;
-	color: var(--pink) !important;
-}
-
 .sub-image {
 	border: 3px solid white;
-	bottom: 0px;
-	right: 20%;
+	bottom: -10px;
+	right: 20px;
 }
 
+/* Gallery */
+
 .gallery-img {
-	border-radius: 3px;
+	border-radius: 5px;
 	width: 100%;
-	/* height: 100%; */
 }
 
 .gallery-img-wrapper {
 	position: relative;
-	/* height: 350px; */
 }
 
 .gallery-img-text {
@@ -115,28 +200,60 @@ h2 {
 	width: 100%;
 }
 
-.width-210 {
-	min-width: 190px;
-	max-width: 210px;
+.gallery-img-text > p {
+	font-size: 1.5rem;
+	color: white;
+	font-weight: 600;
+}
+
+.width-190 {
+	width: 190px;
+	min-width:190px;
+	max-width: 190px;
 }
 
 .gutter-1 > [class*="col-"] {
 	padding: 8px !important;
 }
 
+.gallery-img-wrapper:hover .gallery-img-text p{
+	transition: .5s all;
+	color: black;
+}
+
 .divider {
-	height: 2px;
-	background-color: green;
+	height: 3px;
+	background-color: var(--pink);
 	width: 90%;
 	margin: 0px auto;
 }
+
+/* footer */
 
 .footer-menu > ul {
 	list-style: none;
 	padding: 0px;
 }
 
+footer .logo {
+	color: var(--pink) !important;
+	text-transform: uppercase;
+}
+
 .footer-menu > ul > li {
+	padding: 5px 0px;
+}
+
+.footer-menu > ul > li > a {
+	transition: 0.5s all;
+	font-size: 0.8rem;
+	color: rgba(102, 102, 102, 0.6);
+}
+
+.footer-menu > ul > li > a:hover {
+	transition: 0.5s all;
+	color: var(--pink);
+	text-decoration: none;
 }
 
 @media only screen and (max-width: 768px) {
@@ -144,4 +261,8 @@ h2 {
 		height: 250px;
 		width: 250px;
 	}
+}
+
+.airplane{
+	transform: rotate(-30deg)
 }

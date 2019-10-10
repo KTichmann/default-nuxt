@@ -14,6 +14,7 @@
 		<link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet" />
 		<link href="https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap" rel="stylesheet" />
 		<link href="./css/main.css" rel="stylesheet" />
+		<script src="./js/main.js"></script>
 	</head>
 	<body>
 		<!-- Header Section -->
@@ -29,7 +30,7 @@
 					aria-expanded="false"
 					aria-label="Toggle navigation"
 				>
-					<span class="navbar-toggler-icon"></span>
+					<span><img src="./assets/menu-icon.svg" /></span>
 				</button>
 				<div class="collapse navbar-collapse" id="navbarSupportedContent">
 					<ul class="navbar-nav ml-auto">
@@ -49,7 +50,7 @@
 							<a class="nav-link" href="#">Log&nbsp;in</a>
 						</li>
 						<li class="nav-item">
-							<a class="btn" href="#">Sign&nbsp;up</a>
+							<button class="btn font-weight-bold" href="#">Sign&nbsp;up</button>
 						</li>
 					</ul>
 				</div>
@@ -62,10 +63,10 @@
 					</h1>
 				</div>
 				<div>
-					<h4 class="text-center">And find the perfect partner to fulfill it</h4>
+					<h4 class="text-center text-white">And find the perfect partner to fulfill it</h4>
 				</div>
 				<div class="d-flex justify-content-center mt-4">
-					<a class="btn mt-2">Find your holiday partner</a>
+					<a class="btn mt-2 font-weight-bold">Find your holiday partner</a>
 				</div>
 			</div>
 		</div>
@@ -77,10 +78,10 @@
 			<div class="row">
 				<div class="col-12 col-md-3 col-sm-6 d-flex justify-content-center px-3 py-3">
 					<div>
-						<div class="col width-210">
+						<div class="col width-190">
 							<div class="position-relative width-210">
-								<img class="rounded-circle d-flex mx-auto" src="./assets/partner1.jpg" />
-								<img src="./assets/music.svg" class="sub-image position-absolute bg-primary px-2 py-2 rounded-circle" />
+								<img class="rounded-circle d-flex mx-auto" src="./assets/partner1.jpg" alt="partner image" />
+								<img src="./assets/music.svg" class="sub-image position-absolute px-2 py-2 rounded-circle bg-pink" />
 							</div>
 							<p class="font-weight-bold text-center my-3">Bradley Hunter</p>
 							<p class="my-3 text-center">Based in Chicago. I love playing tennis and loud music.</p>
@@ -89,42 +90,53 @@
 				</div>
 				<div class="col-12 col-md-3 col-sm-6 d-flex justify-content-center px-3 py-3">
 					<div>
-						<div class="col width-210">
+						<div class="col width-190">
 							<div class="position-relative width-210">
-								<img class="rounded-circle d-flex mx-auto" src="./assets/partner1.jpg" />
-								<img src="./assets/music.svg" class="sub-image position-absolute bg-primary px-2 py-2 rounded-circle" />
+								<img class="rounded-circle d-flex mx-auto" src="./assets/partner2.jpg" alt="partner image" />
+								<img
+									src="./assets/brush.svg"
+									class="sub-image position-absolute bg-primary px-2 py-2 rounded-circle bg-green"
+								/>
 							</div>
-							<p class="font-weight-bold text-center my-3">Bradley Hunter</p>
-							<p class="my-3 text-center">Based in Chicago. I love playing tennis and loud music.</p>
+							<p class="font-weight-bold text-center my-3">Marie Bennett</p>
+							<p class="my-3 text-center">Currently living in Colorado. Lover of art, languages, and travelling.</p>
 						</div>
 					</div>
 				</div>
 				<div class="col-12 col-md-3 col-sm-6 d-flex justify-content-center px-3 py-3">
 					<div>
-						<div class="col width-210">
+						<div class="col width-190">
 							<div class="position-relative width-210">
-								<img class="rounded-circle d-flex mx-auto" src="./assets/partner1.jpg" />
-								<img src="./assets/music.svg" class="sub-image position-absolute bg-primary px-2 py-2 rounded-circle" />
+								<img class="rounded-circle d-flex mx-auto" src="./assets/partner3.jpg" alt="partner image" />
+								<img
+									src="./assets/camera.svg"
+									class="sub-image position-absolute bg-primary px-2 py-2 rounded-circle bg-orange"
+								/>
 							</div>
-							<p class="font-weight-bold text-center my-3">Bradley Hunter</p>
-							<p class="my-3 text-center">Based in Chicago. I love playing tennis and loud music.</p>
+							<p class="font-weight-bold text-center my-3">Diana Wells</p>
+							<p class="my-3 text-center">
+								Living in Athens, Greece. I love black and white classics, chillout music and green tea.
+							</p>
 						</div>
 					</div>
 				</div>
 				<div class="col-12 col-md-3 col-sm-6 d-flex justify-content-center px-3 py-3">
 					<div>
-						<div class="col width-210">
+						<div class="col width-190">
 							<div class="position-relative width-210">
-								<img class="rounded-circle d-flex mx-auto" src="./assets/partner1.jpg" />
-								<img src="./assets/music.svg" class="sub-image position-absolute bg-primary px-2 py-2 rounded-circle" />
+								<img class="rounded-circle d-flex mx-auto" src="./assets/partner4.jpg" alt="partner image" />
+								<img
+									src="./assets/airplane.svg"
+									class="sub-image position-absolute bg-primary px-2 py-2 rounded-circle bg-purple airplane"
+								/>
 							</div>
-							<p class="font-weight-bold text-center my-3">Bradley Hunter</p>
-							<p class="my-3 text-center">Based in Chicago. I love playing tennis and loud music.</p>
+							<p class="font-weight-bold text-center my-3">Christopher Pierce</p>
+							<p class="my-3 text-center">Star Wars fanatic. I have a persistent enthusiasm to create new things.</p>
 						</div>
 					</div>
 				</div>
 			</div>
-			<button class="btn btn-primary mx-auto d-flex mt-4">
+			<button class="btn btn-outlined mx-auto d-flex mt-4 font-weight-bold">
 				See other partners
 			</button>
 		</div>
@@ -136,45 +148,45 @@
 			<div class="row gutter-1">
 				<!-- row 1 -->
 				<div class="gallery-img-wrapper text-center col-12 col-md-4 col-sm-6">
-					<img src="assets/block1Sports.jpg" alt="" class="img-responsive gallery-img" />
+					<img src="assets/block1Sports.jpg" class="img-responsive gallery-img" alt="person running" />
 					<div class="gallery-img-text">
 						<p>Sports</p>
 					</div>
 				</div>
 				<div class="gallery-img-wrapper text-center col-12 col-md-4 col-sm-6">
-					<img src="assets/block1Sports.jpg" alt="" class="img-responsive gallery-img" />
+					<img src="assets/block2Wellness.jpg" class="img-responsive gallery-img" alt="woman sunbathing" />
 					<div class="gallery-img-text">
 						<p>Wellness and Health</p>
 					</div>
 				</div>
 				<div class="gallery-img-wrapper text-center col-12 col-md-4 col-sm-6">
-					<img src="assets/block1Sports.jpg" alt="" class="img-responsive gallery-img" />
+					<img src="assets/block3Expeditions.jpg" class="img-responsive gallery-img" alt="man rockclimbing" />
 					<div class="gallery-img-text">
 						<p>Expeditions</p>
 					</div>
 				</div>
 				<!-- row 2 -->
 				<div class="gallery-img-wrapper text-center col-12 col-md-4 col-sm-6">
-					<img src="assets/block1Sports.jpg" alt="" class="img-responsive gallery-img" />
+					<img src="assets/block4Games.jpg" class="img-responsive gallery-img" alt="poker cards" />
 					<div class="gallery-img-text">
 						<p>Games</p>
 					</div>
 				</div>
 				<div class="gallery-img-wrapper text-center col-12 col-md-8 col-sm-6">
-					<img src="assets/block5Culture.jpg" alt="" class="img-responsive gallery-img" />
+					<img src="assets/block5Culture.jpg" class="img-responsive gallery-img" alt="stadium" />
 					<div class="gallery-img-text">
 						<p>Culture and Education</p>
 					</div>
 				</div>
 				<!-- row 3 -->
 				<div class="gallery-img-wrapper text-center col-12 col-md-8 col-sm-6">
-					<img src="assets/block5Culture.jpg" alt="" class="img-responsive gallery-img" />
+					<img src="assets/block6Beauty.jpg" class="img-responsive gallery-img" alt="woman getting a scalp massage" />
 					<div class="gallery-img-text">
 						<p>Beauty and Relaxation</p>
 					</div>
 				</div>
 				<div class="gallery-img-wrapper text-center col-12 col-md-4 col-sm-6">
-					<img src="assets/block1Sports.jpg" alt="" class="img-responsive gallery-img" />
+					<img src="assets/block7Travelling.jpg" class="img-responsive gallery-img" alt="couple taking a selfie" />
 					<div class="gallery-img-text">
 						<p>Travelling</p>
 					</div>
@@ -185,32 +197,34 @@
 		<!-- Footer Section -->
 		<footer class="container my-5">
 			<div class="row">
-				<div class="col-12 col-md-3 logo">Dreamshare</div>
-				<div class="col-12 col-md-3 footer-menu">
+				<div class="col-6 col-md-3 logo font-weight-bold">Dreamshare</div>
+				<div class="col-6 col-md-3 footer-menu">
 					<ul>
-						<li class="font-weight-bold">Menu title</li>
-						<li>Menu item 2</li>
-						<li>Menu item 3</li>
-						<li>Menu item 4</li>
-						<li>Menu item 5</li>
+						<li class="font-weight-bold">Company</li>
+						<li><a href="#">About</a></li>
+						<li><a href="#">Contact</a></li>
+						<li><a href="#">Press</a></li>
+						<li><a href="#">Blog</a></li>
+						<li><a href="#">Terms and Privacy</a></li>
+						<li><a href="#">Help</a></li>
 					</ul>
 				</div>
-				<div class="col-12 col-md-3 footer-menu">
+				<div class="col-6 col-md-3 footer-menu">
 					<ul>
-						<li class="font-weight-bold">Menu title</li>
-						<li>Menu item 2</li>
-						<li>Menu item 3</li>
-						<li>Menu item 4</li>
-						<li>Menu item 5</li>
+						<li class="font-weight-bold">Activities</li>
+						<li><a href="#">Sports</a></li>
+						<li><a href="#">Wellness and Health</a></li>
+						<li><a href="#">Expeditions</a></li>
+						<li><a href="#">Games</a></li>
+						<li><a href="#">Culture and Education</a></li>
+						<li><a href="#">View All</a></li>
 					</ul>
 				</div>
-				<div class="col-12 col-md-3 footer-menu">
+				<div class="col-6 col-md-3 footer-menu">
 					<ul>
-						<li class="font-weight-bold">Menu title</li>
-						<li>Menu item 2</li>
-						<li>Menu item 3</li>
-						<li>Menu item 4</li>
-						<li>Menu item 5</li>
+						<li class="font-weight-bold">Contact us</li>
+						<li><a href="tel:0000000000">Tel: (000) 000 0000</a></li>
+						<li><a href="mailto:dreamshare@email.com">Email: dreamshare@email.com</a></li>
 					</ul>
 				</div>
 			</div>
